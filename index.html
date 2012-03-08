@@ -1,0 +1,128 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>SLU Libraries Mobile Test</title> 
+	<link rel="stylesheet" href="./jqm/jquery.mobile-1.0a3.min.css" />
+	<link rel="stylesheet" href="./jqm/style.css" />
+  <link rel="stylesheet" href="./jqm/1140.css" />
+  <!--[if lte IE 9]><link rel="stylesheet" href="./jqm/ie.css" type="text/css" media="screen" /><![endif]-->
+	<script type="text/javascript" src="./jqm/jquery-1.4.3.min.js"></script>
+	<script type="text/javascript" src="./jqm/jquery.mobile-1.0a3.min.js"></script>
+  <script type="text/javascript" src="./jqm/css3-mediaqueries.js"></script>
+</head> 
+<body>  <!-- Start of first page --> 
+  <div data-theme="c" id="main" data-role="page">
+    <div data-role="header">
+    	<div id="slu_logo"></div>
+    </div><!-- /header -->  
+    <div data-role="content"> 
+      <p style="text-align: center; line-height: 21px;">Saint Louis University<br />Libraries</p><br />
+      <div class="row icon-table">
+        <div class="fourcol">
+        </div>
+          <div class="fourcol col">
+		        <ul>
+			       <a href="#locations"><li class="location"><span>Locations</span></li></a>
+			       <a href="#ask"><li class="chat"><span>Ask a Librarian</span></li></a>
+			       <a href="hours.html"><li class="hours"><span>Hours</span></li></a>
+			       <a href="#databases"><li class="database"><span>Databases</span></li></a>
+			       <a href="#catalog"><li class="catalog"><span>Catalog</span></li></a>
+			       <a href="#directory"><li class="directory"><span>Directory</span></li></a>
+            </ul>
+          </div><!-- /second column -->
+        <div class="fourcol last">
+        </div>
+    </div><!-- /row icon-table -->
+      
+      <ul data-inset="true" data-role="listview"> 
+        <li><img class="ui-li-icon" /><a href="http://libguides.slu.edu/" rel="external">Research Guides</a></li> 
+        <li><img class="ui-li-icon" /><a href="http://libanswers.slu.edu/" rel="external">FAQs</a></li> 
+      </ul> 
+    </div><!-- /content --> 
+    <div data-role="footer"> 
+      <h4><a href="http://libraries.slu.edu">Full Libraries website</a></h4> 
+    </div><!-- /footer --> 
+  </div><!-- /page --> <!-- Start of second page --> 
+
+  <div data-theme="c" id="ask" data-role="page"> 
+    <div data-role="header">
+      <div data-backbtn="true"></div>
+      <div id="slu_logo"></div>
+    </div><!-- /header --> 
+    <div data-role="content">
+      <p style="text-align: center;">There are several ways in which a reference librarian is available to answer your questions.  Please choose a contact method from the list below.</p>
+      <ul data-inset="true" data-role="listview"> 
+        <li><a href="chat.html" rel="external">Live Chat</a></li> 
+        <li><a href="tel:3149773103">Phone: (314) 977-3104</a></li> 
+        <li><font size="3"><a href="sms:3142827587">SMS/Text: (314) 28-ASK-US</a></font></li> 
+        <li><a href="mailto:piusref@slu.edu">Email: piusref@slu.edu</a></li> 
+      </ul>
+    </div><!-- /content --> 
+    <div data-role="footer"> 
+      <h4><a href="http://libraries.slu.edu">Full Libraries website</a></h4>
+    </div><!-- /footer --> 
+  </div><!-- /page -->
+
+  <div data-theme="c" id="3" data-role="page"> 
+    <div data-role="header"> 
+      <h1>Databases - SLU Libraries</h1> 
+    </div><!-- /header --> 
+    <div data-role="content">
+      <p>Selected mobile databases for Saint Louis University Libraries:</p>
+      <ul data-inset="true" data-role="listview"> 
+        <li><a href="http://web.ebscohost.com.ezp.slu.edu/mobsmart/databases/DatabaseList?hid=13&sid=d1e4a95b-c387-4fc3-9088-d0c91c0c9db1%40sessionmgr10&vid=1" rel="external">EBSCO Databases *</a></li> 
+        <li><a href="#main">Database 2</a></li> 
+        <li><a href="#main">Database 3</a></li> 
+        <li><a href="#main">Database 4</a></li> 
+        <li><a href="#main">Database 5</a></li> 
+        <li><a href="#main">Database 6</a></li> 
+        <li><a href="http://libraries.slu.edu/databases/databases.php" rel="external">Full list of databases</a></li> 
+      </ul>
+	<p>* Requires SLU Proxy login</p>
+      </div><!-- /content --> 
+    <div data-role="footer"> 
+      <h4>SLU Libraries</h4> 
+    </div><!-- /footer --> 
+  </div><!-- /page -->
+
+  <div data-theme="c" id="4" data-role="page"> 
+    <div data-role="header"> 
+      <h1>Catalog - SLU Libraries</h1> 
+    </div><!-- /header --> 
+    <div data-role="content">
+	<p>Mobile Catalog coming soon.</p>
+      <p>This is page 4. Demonstrating a different list item style.</p><br />
+      <ul data-inset="false" data-role="listview"> 
+        <li><a href="#main">List Item</a></li> 
+        <li><a href="#main">Another List Item</a></li> 
+        <li><a href="#main">Yet another list item</a></li> 
+        <li><a href="#main">The final list item</a></li> 
+      </ul>
+      <br />
+    </div><!-- /content --> 
+    <div data-role="footer"> 
+      <h4>SLU Libraries</h4> 
+    </div><!-- /footer --> 
+  </div><!-- /page -->
+
+  <div data-theme="c" id="5" data-role="page"> 
+    <div data-role="header"> 
+      <h1>Locations - SLU Libraries</h1> 
+    </div><!-- /header --> 
+    <div data-role="content">
+      <p>Click a library for map and directions:</p>
+      <ul data-inset="true" data-role="listview"> 
+        <li><a href="./piusmap.html" rel="external"><h1>Pius Memorial Library</h1><p>3650 Lindell Blvd.<br />St. Louis, MO 63108</p></a></li> 
+        <li><a href="./mclmap.html" rel="external"><h1>Medical Center Library</h1><p>1402 S. Grand Blvd.<br />St. Louis, MO 63104</p></a></li>
+        <li><a href="./lawmap.html" rel="external"><h1>Omer Poos Law Library</h1><p>3700 Lindell Blvd.<br />St. Louis, MO 63108</p></a></li>
+      </ul>
+    </div><!-- /content --> 
+    <div data-role="footer"> 
+      <h4>SLU Libraries</h4> 
+    </div><!-- /footer --> 
+  </div><!-- /page -->
+
+</body>
+
+</html>
+

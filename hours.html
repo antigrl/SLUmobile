@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Hours - SLU Libraries</title> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.css" />
+	<script type="text/javascript" src="./jqm/jquery-1.4.3.min.js"></script>
+	<script type="text/javascript" src="./jqm/jquery.mobile-1.0a3.min.js"></script>
+</head> 
+<body> 
+
+<div data-theme="c" data-role="page">
+
+	<div data-role="header">
+		<h1>Hours - SLU Libraries</h1>
+                <a href="./index.html" rel="external" class="ui-btn-left">Back</a>
+	</div><!-- /header -->
+
+	<div data-role="content">
+
+<!--		<iframe src="https://www.google.com/calendar/hosted/slu.edu/embed?mode=AGENDA&amp;height=200&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=slu.edu_c4reknqcm60rf0blukgoio5urs%40group.calendar.google.com&amp;color=%23691426&amp;ctz=America%2FChicago" style=" border-width:0 " width="250" height="200" frameborder="0" scrolling="no"></iframe>
+-->
+		<iframe src="./hours.php" style=" border-width:0 " width="250" height="200" frameborder="0" scrolling="no"></iframe>
+
+	      <p>Click a library for map and directions:</p>
+	      <ul data-inset="true" data-role="listview"> 
+	        <li><a href="./piusmap.html" rel="external"><h1>Pius Memorial Library</h1><p>3650 Lindell Blvd.<br />St. Louis, MO 63108</p></a></li> 
+	        <li><a href="./mclmap.html" rel="external"><h1>Medical Center Library</h1><p>1402 S. Grand Blvd.<br />St. Louis, MO 63104</p></a></li>
+	        <li><a href="./lawmap.html" rel="external"><h1>Omer Poos Law Library</h1><p>3700 Lindell Blvd.<br />St. Louis, MO 63108</p></a></li>
+	      </ul>
+
+	        <p><a href="index.html" rel="external">Back to main menu</a></p>	
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>SLU Libraries</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+</body>
+</html>

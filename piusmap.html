@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Locations of the Libraries | Saint Louis University Libraries | Saint Louis University</title>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<style type="text/css">
+	  html { height: 100% }
+	  body { height: 100%; margin: 0px; padding: 0px }
+	  #map_canvas { height: 100% }
+	</style>
+	<script type="text/javascript"
+	    src="http://maps.google.com/maps/api/js?sensor=true">
+	</script>
+	<script type="text/javascript">
+	  function initialize() {
+	    var latlngCenter = new google.maps.LatLng(38.63683,-90.235114);
+	    var latlngPius = new google.maps.LatLng(38.63683,-90.235114);
+	    var latlngLaw = new google.maps.LatLng(38.637475,-90.237045);
+	    var latlngMCL = new google.maps.LatLng(38.622162,-90.236487);
+	    var libIcon = './images/lib_map_icon.png';
+	    var myOptions = {
+	      zoom: 17,
+	      center: latlngCenter,
+	      mapTypeId: google.maps.MapTypeId.ROADMAP,
+	      mapTypeControl: false
+	    };
+	    var map = new google.maps.Map(document.getElementById("map_canvas"),
+	        myOptions);
+	    var infowindowPius = new google.maps.InfoWindow({
+		 content: '<font size="2"><b>Pius XII Memorial Library</b><br />3650 Lindell Blvd.<br />St. Louis, MO  63108<br />Phone: <a href="tel://3149773087">314-977-3087</a><br />SMS/Text:  <a href="sms://3142827587">314-28-ASK-US</a></font>',
+		 disableAutoPan: false
+	    });
+	    var piusMarker = new google.maps.Marker({
+	      position: latlngPius, 
+	      map: map, 
+	      title:"Pius XII Memorial Library",
+	      icon: libIcon
+	    });   
+	    google.maps.event.addListener(piusMarker, 'click', function() {
+		  infowindowPius.open(map,piusMarker);
+	    });
+	  infowindowPius.open(map,piusMarker);
+	  }
+	</script>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.css" />
+	<script type="text/javascript" src="./jqm/jquery-1.4.3.min.js"></script>
+	<script type="text/javascript" src="./jqm/jquery.mobile-1.0a3.min.js"></script>
+</head>
+
+<body onload="initialize()"><link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.css" />
+  <div data-theme="c" id="map" data-role="page" style="width:100%; height:100%">
+    <div data-backbtn="false" data-role="header" data-theme="b"> 
+      <h1>Map - SLU Libraries</h1> <a class="ui-btn-left" rel="external" href="./hours.html">Back</a> 
+    </div><!-- /header --> 
+
+    <div id="map_canvas" style="width:100%; height:100%"></div>
+
+    <div data-role="footer"> 
+      <h4>SLU Libraries</h4> 
+    </div><!-- /footer --> 
+ </div>
+</body>
+</html>

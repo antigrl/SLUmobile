@@ -1,0 +1,78 @@
+.icon-table {
+	border-radius: 10px;
+	border-collapse: separate;
+	overflow: hidden;
+	box-shadow: 0 0 8px rgba(0,0,0,0.3);
+	background-color: #01193b;
+	padding: 5px;
+}
+.icon-table li {
+	list-style: none;
+	display: inline-block;
+}
+.icon-table span { /* Hides text, but still screen readable */
+	position: absolute;
+	top:-9999px;
+	left:-9999px;
+}
+.icon-table .location,
+.icon-table .chat,
+.icon-table .hours,
+.icon-table .database,
+.icon-table .catalog,
+.icon-table .directory {
+	content: "";
+  	display: inline-block;
+	background: url(../images/icon_sprites.png) no-repeat;
+	margin: 20px 15px;
+	height: 62px;
+}
+.icon-table .location {
+  	background-position: 0 0;
+	width: 58px;
+}
+	.location:hover,:active {
+  		background-position: 0 -64px;
+	}
+.icon-table .chat {
+  	background-position: -61px 0;
+	width: 91px;
+}
+	.chat:hover,:active {
+  		background-position: -61px -64px;
+	}
+.icon-table .hours {
+  	background-position: -153px 0;
+  	width: 47px;
+}
+	.hours:hover,:active {
+  		background-position: -153px -64px;
+	}
+.icon-table .database {
+  	background-position: -199px 0;
+  	width: 62px;
+}
+	.database:hover,:active {
+	  	background-position: -199px -64px;
+	}
+.icon-table .catalog {
+  	background-position: -262px 0;
+  	width: 62px;
+}
+	.catalog:hover,:active {
+	  	background-position: -262px -64px;
+	}
+.icon-table .directory {
+  	background-position: -323px 0;
+  	width: 55px;
+}
+	.directory:hover,:active {
+ 	 	background-position: -323px -64px;
+	}
+
+.icon-table ul {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
