@@ -1,0 +1,116 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>SLU Libraries Mobile Test</title> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.js"></script>
+</head> 
+<body><link href="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.css" rel="stylesheet" />   <!-- Start of first page --> 
+  <div data-theme="c" id="main" data-role="page">
+    <div data-theme="b" data-role="header"> 
+      <h1>SLU Libraries</h1> 
+    </div><!-- /header -->  
+    <div data-role="content"> 
+      <p><img src="./images/libslogo.png" style="float: left; padding: 0px 3px 0px 0px;"/>Welcome to the mobile website for Saint Louis University Libraries.</p> 
+      <p>Our goal is to provide you with the information you need -- anytime, anywhere.</p>
+      <ul data-inset="true" data-role="listview"> 
+        <li><img class="ui-li-icon" src="./images/libslogo_icon.png" /><a href="hours.html" rel="external">Hours & Locations</a></li> 
+        <li><img class="ui-li-icon" src="./images/libslogo_icon.png" /><a href="#ask">Ask A Librarian</a></li> 
+        <li><img class="ui-li-icon" src="./images/libslogo_icon.png" /><a href="#3">Databases</a></li> 
+        <li><img class="ui-li-icon" src="./images/libslogo_icon.png" /><a href="#4">Catalog</a></li>
+        <li><img class="ui-li-icon" src="./images/libslogo_icon.png" /><a href="http://libguides.slu.edu/mobile.php/" rel="external">Research Guides</a></li> 
+        <li><img class="ui-li-icon" src="./images/libslogo_icon.png" /><a href="http://libanswers.slu.edu/mobile.php/" rel="external">FAQs</a></li> 
+        <li><img class="ui-li-icon" src="./images/libslogo_icon.png" /><a href="http://libraries.slu.edu/" rel="external">Full Website</a></li> 
+      </ul> 
+    </div><!-- /content --> 
+    <div data-role="footer"> 
+      <h4>SLU Libraries</h4> 
+    </div><!-- /footer --> 
+  </div><!-- /page --> <!-- Start of second page --> 
+
+  <div data-theme="c" id="ask" data-role="page"> 
+    <div data-theme="b" data-role="header"> 
+      <h1>Ask Us - SLU Libraries</h1> 
+    </div><!-- /header --> 
+    <div data-role="content">
+      <p>There are several ways in which a reference librarian is available to answer your questions.  Please choose a contact method from the list below.</p>
+      <ul data-inset="true" data-role="listview"> 
+        <li><img class="ui-li-icon" src="./images/libslogo_icon.png" /><a href="chat.html" rel="external">Live Chat</a></li> 
+        <li><img class="ui-li-icon" src="./images/libslogo_icon.png" /><a href="tel:3149773103">Phone: (314)977-3104</a></li> 
+        <li><img class="ui-li-icon" src="./images/libslogo_icon.png" /><a href="#ask">SMS/Text Message: coming soon</a></li> 
+        <li><img class="ui-li-icon" src="./images/libslogo_icon.png" /><a href="mailto:piusref@slu.edu">Email: piusref@slu.edu</a></li> 
+      </ul>
+      <p><a href="#main">Back to main menu</a></p> 
+    </div><!-- /content --> 
+    <div data-role="footer"> 
+      <h4>SLU Libraries</h4> 
+    </div><!-- /footer --> 
+  </div><!-- /page -->
+
+  <div data-theme="c" id="3" data-role="page"> 
+    <div data-theme="b" data-role="header"> 
+      <h1>Databases - SLU Libraries</h1> 
+    </div><!-- /header --> 
+    <div data-role="content">
+      <p>Selected mobile databases for Saint Louis University Libraries:</p>
+      <ul data-inset="true" data-role="listview"> 
+        <li><a href="http://web.ebscohost.com.ezp.slu.edu/mobsmart/databases/DatabaseList?hid=13&sid=d1e4a95b-c387-4fc3-9088-d0c91c0c9db1%40sessionmgr10&vid=1" rel="external">EBSCO Databases *</a></li> 
+        <li><a href="#main">Database 2</a></li> 
+        <li><a href="#main">Database 3</a></li> 
+        <li><a href="#main">Database 4</a></li> 
+        <li><a href="#main">Database 5</a></li> 
+        <li><a href="#main">Database 6</a></li> 
+        <li><a href="http://libraries.slu.edu/databases/databases.php/" rel="external">Full list of databases</a></li> 
+      </ul>
+	<p>* Requires SLU Proxy login</p>
+      <p><a href="#main">Back to main menu</a></p> 
+    </div><!-- /content --> 
+    <div data-role="footer"> 
+      <h4>SLU Libraries</h4> 
+    </div><!-- /footer --> 
+  </div><!-- /page -->
+
+  <div data-theme="c" id="4" data-role="page"> 
+    <div data-theme="b" data-role="header"> 
+      <h1>Catalog - SLU Libraries</h1> 
+    </div><!-- /header --> 
+    <div data-role="content">
+	<p>Mobile Catalog coming soon.</p>
+      <p>This is page 4. Demonstrating a different list item style.</p><br />
+      <ul data-inset="false" data-role="listview"> 
+        <li><a href="#main">List Item</a></li> 
+        <li><a href="#main">Another List Item</a></li> 
+        <li><a href="#main">Yet another list item</a></li> 
+        <li><a href="#main">The final list item</a></li> 
+      </ul>
+      <br />
+      <p><a href="#main">Back to main menu</a></p> 
+    </div><!-- /content --> 
+    <div data-role="footer"> 
+      <h4>SLU Libraries</h4> 
+    </div><!-- /footer --> 
+  </div><!-- /page -->
+
+  <div data-theme="c" id="5" data-role="page"> 
+    <div data-theme="b" data-role="header"> 
+      <h1>Page 5 - SLU Libraries</h1> 
+    </div><!-- /header --> 
+    <div data-role="content">
+      <p>This is page 5.</p>
+      <ul data-inset="true" data-role="listview"> 
+        <li><img class="ui-li-icon" src="./images/libslogo_icon.png" /><a href="#main">List Item</a></li> 
+        <li><img class="ui-li-icon" src="./images/libslogo_icon.png" /><a href="#main">Another List Item</a></li> 
+        <li><img class="ui-li-icon" src="./images/libslogo_icon.png" /><a href="##main">Yet another list item</a></li> 
+        <li><img class="ui-li-icon" src="./images/libslogo_icon.png" /><a href="#main">The final list item</a></li> 
+      </ul>
+      <p><a href="#main">Back to main menu</a></p> 
+    </div><!-- /content --> 
+    <div data-role="footer"> 
+      <h4>SLU Libraries</h4> 
+    </div><!-- /footer --> 
+  </div><!-- /page -->
+
+</body>
+
+</html>

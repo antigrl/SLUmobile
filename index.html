@@ -24,10 +24,10 @@
 		        <ul>
 			       <a href="#locations"><li class="location"><span>Locations</span></li></a>
 			       <a href="#ask"><li class="chat"><span>Ask a Librarian</span></li></a>
-			       <a href="hours.html"><li class="hours"><span>Hours</span></li></a>
+			       <a href="#hours"><li class="hours"><span>Hours</span></li></a>
 			       <a href="#databases"><li class="database"><span>Databases</span></li></a>
 			       <a href="#catalog"><li class="catalog"><span>Catalog</span></li></a>
-			       <a href="#directory"><li class="directory"><span>Directory</span></li></a>
+			       <a href="#6"><li class="directory"><span>Directory</span></li></a>
             </ul>
           </div><!-- /second column -->
         <div class="fourcol last">
@@ -42,21 +42,56 @@
     <div data-role="footer"> 
       <h4><a href="http://libraries.slu.edu">Full Libraries website</a></h4> 
     </div><!-- /footer --> 
-  </div><!-- /page --> <!-- Start of second page --> 
+  </div><!-- /page --> 
+
+  <!-- Start of second page --> 
 
   <div data-theme="c" id="ask" data-role="page"> 
     <div data-role="header">
       <div data-backbtn="true"></div>
       <div id="slu_logo"></div>
+      <a href="/" class="ui-btn-right" data-icon="home" data-iconpos="notext" id="#main">Home</a> 
     </div><!-- /header --> 
     <div data-role="content">
       <p style="text-align: center;">There are several ways in which a reference librarian is available to answer your questions.  Please choose a contact method from the list below.</p>
       <ul data-inset="true" data-role="listview"> 
-        <li><a href="chat.html" rel="external">Live Chat</a></li> 
+        <li><a href="#chat">Live Chat</a></li> 
         <li><a href="tel:3149773103">Phone: (314) 977-3104</a></li> 
-        <li><font size="3"><a href="sms:3142827587">SMS/Text: (314) 28-ASK-US</a></font></li> 
+        <li><font size="3"><a href="sms:3142827587">SMS/Text: (314) 28-ASK-US</a></font></li>
         <li><a href="mailto:piusref@slu.edu">Email: piusref@slu.edu</a></li> 
       </ul>
+    </div><!-- /content --> 
+    <div data-role="footer"> 
+      <h4><a href="http://libraries.slu.edu">Full Libraries website</a></h4>
+    </div><!-- /footer --> 
+  </div><!-- /page -->
+
+  <!-- Start Chat Page -->
+
+<div data-theme="c" id="chat" data-role="page"> 
+    <div data-role="header">
+      <div data-backbtn="true"></div>
+      <div id="slu_logo"></div>
+    </div><!-- /header --> 
+    <div data-role="content">
+      <iframe frameborder="1" style="width: 168px; height: 300px; border: 0px none;" src="http://m.libraryh3lp.com/chat/piusref-q@chat.libraryh3lp.com?skin=9942&amp;theme=simpletext&amp;title=Ask+a+Librarian&amp;identity=librarian&amp;sound=true"></iframe>
+      <p>&nbsp;</p> 
+      <div style="display: none;" class="libraryh3lp"><img src="http://libraries.slu.edu/chat/images/unavailable.png" alt="Librarian away" /></div>
+    </div><!-- /content --> 
+    <div data-role="footer"> 
+      <h4><a href="http://libraries.slu.edu">Full Libraries website</a></h4>
+    </div><!-- /footer --> 
+  </div><!-- /page -->
+
+  <!-- Start Hours Page -->
+
+  <div data-theme="c" id="hours" data-role="page"> 
+    <div data-role="header">
+      <div data-backbtn="true"></div>
+      <div id="slu_logo"></div>
+    </div><!-- /header --> 
+    <div data-role="content">
+      <iframe src="./hours.php" style="border-width:0;" width="250" height="200" frameborder="0" scrolling="no"></iframe>
     </div><!-- /content --> 
     <div data-role="footer"> 
       <h4><a href="http://libraries.slu.edu">Full Libraries website</a></h4>
@@ -115,6 +150,31 @@
         <li><a href="./piusmap.html" rel="external"><h1>Pius Memorial Library</h1><p>3650 Lindell Blvd.<br />St. Louis, MO 63108</p></a></li> 
         <li><a href="./mclmap.html" rel="external"><h1>Medical Center Library</h1><p>1402 S. Grand Blvd.<br />St. Louis, MO 63104</p></a></li>
         <li><a href="./lawmap.html" rel="external"><h1>Omer Poos Law Library</h1><p>3700 Lindell Blvd.<br />St. Louis, MO 63108</p></a></li>
+      </ul>
+    </div><!-- /content --> 
+    <div data-role="footer"> 
+      <h4>SLU Libraries</h4> 
+    </div><!-- /footer --> 
+  </div><!-- /page -->
+
+  <div data-theme="c" id="6" data-role="page"> 
+    <div data-role="header"> 
+      <h1>Directory</h1> 
+    </div><!-- /header --> 
+    <div data-role="content">
+      <p>Library Directory</p>
+      <ul data-inset="true" data-role="listview"> 
+        <li><a href="tel:3149773100">Administration Office (314) 977-3100</a></li> 
+        <li><a href="tel:3149773087">Access Services (314) 977-3087</a></li> 
+        <li><a href="tel:3149773103">Government Documents (314) 977-3103</a></li> 
+        <li><a href="tel:3149773104">Interlibrary Loan (314) 977-3104</a></li>
+        <li><a href="tel:3149773090">Knights of Columbus Vatican Film Library (314) 977-3090</a></li> 
+        <li><a href="tel:3149773109">Manuscripts & Univrsity Archives</a></li> 
+        <li><a href="tel:3149773110">Media Room (314) 977-3110</a></li> 
+        <li><a href="tel:3149773103">Reference (314) 977-3103</a></li>
+        <li><a href="tel:3149775070">Rare Books (314) 977-5070</a></li> 
+        <li><a href="tel:3149773585">Reserves (314) 977-3585</a></li> 
+        <li><a href="tel:314977313">Technical Services (314) 977-3113</a></li> 
       </ul>
     </div><!-- /content --> 
     <div data-role="footer"> 
