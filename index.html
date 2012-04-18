@@ -4,7 +4,6 @@
 	<title>SLU Libraries Mobile</title> 
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.css" />
 	<link rel="stylesheet" href="./jqm/style.css" />
-  <link rel="stylesheet" href="./jqm/1140.css" />
 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js"></script>
@@ -16,30 +15,31 @@
     	<div id="slu_logo"></div>
     </div><!-- /header -->  
     <div data-role="content">
-      <p style="text-align: center; line-height: 21px;">Saint Louis University<br />Libraries<br /><br /></p>
-     <iframe src="./hours.php" style="border-width:0" width="250" height="200" frameborder="0" scrolling="no" style="text-align:center;"></iframe>
-      <div class="row icon-table">
-        <div class="fourcol"></div>
-          <div class="fourcol col">
-		        <ul>
-			       <a href="#maps"><li class="location"><span>Locations</span></li></a>
-			       <a href="#ask"><li class="chat"><span>Ask a Librarian</span></li></a>
-			       <a href="#databases"><li class="database"><span>Databases</span></li></a>
-			       <a href="http://www.libanywhere.com/la/index.php?dofollow=4f6b58d42236e8.06178615-62200699"><li class="catalog"><span>Catalog</span></li></a>
-			       <a href="#directory"><li class="directory"><span>Directory</span></li></a>
-            </ul>
-          </div><!-- /second column -->
-        <div class="fourcol last">
-        </div>
-    </div><!-- /row icon-table -->
-      
+      <p style="text-align: center; line-height: 21px;">Saint Louis University<br />Libraries<br /><br />
+     <iframe src="./hours.php" style="border-width:0" width="220" height="120" frameborder="0" scrolling="no"></iframe></p>
+
+<div class="icon-table">
+  <div class="ui-grid-b">
+    <div class="ui-block-a"><a href="#maps"><li class="location"><span>Locations</span></li></a></div>
+    <div class="ui-block-b"><a href="#ask"><li class="chat"><span>Ask a Librarian</span></li></a></div>
+    <div class="ui-block-c"><a href="#databases"><li class="database"><span>Databases</span></li></a></div>
+  </div>
+
+  <div class="ui-grid-b">
+    <div class="ui-block-a"><a href="http://www.libanywhere.com/la/index.php?dofollow=4f6b58d42236e8.06178615-62200699"><li class="catalog"><span>Catalog</span></li></a></div>
+    <div class="ui-block-b"><a href="#directory"><li class="directory"><span>Directory</span></li></a></div> 
+  </div>
+</div><!-- /grid icon-table -->
+    
       <ul data-inset="true" data-role="listview"> 
         <li><img class="ui-li-icon" /><a href="http://libguides.slu.edu/" rel="external">Research Guides</a></li> 
         <li><img class="ui-li-icon" /><a href="http://libanswers.slu.edu/" rel="external">FAQs</a></li> 
       </ul> 
-    </div><!-- /content --> 
-    <div data-role="footer"> 
-      <h4><a href="http://www.libraries.slu.edu/?view=full">Full Libraries website</a></h4> 
+    </div><!-- /content -->
+    <div id="footer-img"></div>
+    <a href="http://www.libraries.slu.edu/?view=full">Full Libraries website</a>
+    <div data-role="footer">
+      <h4><</h4> 
     </div><!-- /footer --> 
   </div><!-- /page --> 
 
@@ -57,7 +57,7 @@
       <li><a href="http://g.co/maps/r2xwp" rel="external">Madrid Library</a></li>
     </ul>
   </div>
-  <div data-role="footer"> 
+  <div data-role="footer footer-img">
     <h4><a href="http://www.libraries.slu.edu" rel="external">Full Libraries website</a></h4> 
   </div><!-- /footer --> 
 </div>
@@ -91,12 +91,10 @@
     <div data-role="content">
       <p>Selected mobile databases for Saint Louis University Libraries:</p>
       <ul data-inset="true" data-role="listview"> 
-        <li><a href="http://web.ebscohost.com.ezp.slu.edu/mobsmart/databases/DatabaseList?hid=13&sid=d1e4a95b-c387-4fc3-9088-d0c91c0c9db1%40sessionmgr10&vid=1" rel="external">EBSCO Databases *</a></li> 
-        <li><a href="#main">Database 2</a></li> 
-        <li><a href="#main">Database 3</a></li> 
-        <li><a href="#main">Database 4</a></li> 
-        <li><a href="#main">Database 5</a></li> 
-        <li><a href="#main">Database 6</a></li> 
+        <li><a href="http://ezp.slu.edu/login?url=http://search.ebscohost.com/login.aspx?authtype=ip&profile=mobile" rel="external">EBSCO Databases*</a></li> 
+        <li><a href="http://www.worldcat.org/m" rel="external">WorldCat Mobile</a></li> 
+        <li><a href="http://www.gale.cengage.com/apps/aml/CollegeLibrary/?grid=11AML047" rel="external">Gale/Cengage</a></li> 
+        <li><a href="http://books.google.com/m" rel="external">Google Book Search</a></li> 
         <li><a href="http://libguides.slu.edu/mobile" rel="external">Full list of databases</a></li> 
       </ul>
 	<p>* Requires SLU Proxy login</p>
